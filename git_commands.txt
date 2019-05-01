@@ -1,0 +1,19 @@
+git config --global user.name username-->configure the user name to be used.
+git config --global user.email email-->configure the user email to be used.
+
+git init-->create a new local repositary or .git repository
+
+
+git status-->list the files you have changed and those you still need to add or commit
+git add <filename>-->add files to staging(index)
+git add .-->add all files to staging
+git commit -m "commit message"-->commit changes to head
+git push origin master-->send changes to the master branch of remote repository
+git pull origin master-->fetch and merge changes on remote server to working directory
+git log-->view commit history
+
+
+git remote add origin <remote repository url>-->connect to a remote repository
+git remote -v-->list all currently configured remote repositories
+
+git clone URL-->create a working copy of a local repository
