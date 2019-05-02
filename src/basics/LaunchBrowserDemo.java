@@ -1,7 +1,7 @@
 package basics;
 
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxBinary;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class LaunchBrowserDemo {
@@ -13,17 +13,18 @@ public class LaunchBrowserDemo {
 		 * of ChromeDriver class
 		 */
 		System.setProperty("webdriver.chrome.driver", ".\\drivers\\chromedriver.exe");
-		ChromeDriver cObj = new ChromeDriver();
-		
+//		ChromeDriver cObj = new ChromeDriver();
+		WebDriver driver = new ChromeDriver();
 		
 		/*
-		 * to luanch firefox browser set  System property with the path of geckodrive.exe file using 
+		 * to launch firefox browser set  System property with the path of geckodrive.exe file using 
 		 * webdriver.gecko.driver property
 		 * Create an object of FirefoxDriver class
 		 */
 		System.setProperty("webdriver.gecko.driver", ".\\drivers\\geckodriver.exe");
-		FirefoxDriver fObj = new FirefoxDriver();
+//		FirefoxDriver fObj = new FirefoxDriver();
 
+		driver = new FirefoxDriver();
 	}
 
 }
