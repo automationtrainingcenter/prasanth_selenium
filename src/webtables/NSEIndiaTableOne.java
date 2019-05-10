@@ -6,13 +6,14 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
 import utilities.BrowserHelper;
+import utilities.JavaScriptHelper;
 
 public class NSEIndiaTableOne extends BrowserHelper {
 
 	public static void main(String[] args) {
 		String companyCode = "INFY";
 		launchBrowser("chrome", "https://www.nseindia.com/live_market/dynaContent/live_watch/pre_open_market/pre_open_market.htm");
-
+		
 		// locate table body
 		WebElement tableBody = driver.findElement(By.xpath("//table[@id='preOpenNiftyTab']/tbody"));
 
@@ -27,12 +28,14 @@ public class NSEIndiaTableOne extends BrowserHelper {
 				//print text which is in fourth cell
 				String text = cells.get(3).getText();
 				System.out.println(String.format("price of %s is %s", companyCode, text));
-//				cells.get(0).findElement(By.tagName("a")).click();
+				WebElement ele = cells.get(0).findElement(By.tagName("a"));
+				JavaScriptHelper.bringElementToView(driver, ele);
+				sleep(2);
+				ele.click();
 				break;
-			}
-			
+			}			
 		}
-
+		sleep(3);
 		closeBrowser();
 	}
 
