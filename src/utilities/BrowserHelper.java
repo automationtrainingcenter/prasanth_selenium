@@ -1,5 +1,7 @@
 package utilities;
 
+import java.io.File;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -7,6 +9,10 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 public class BrowserHelper {
 
 	public static WebDriver driver;
+	
+	protected static String getFilePath(String folderName, String fileName) {
+		return System.getProperty("user.dir") + File.separator + folderName + File.separator + fileName;
+	}
 
 	public static void launchBrowser(String brName, String url) {
 		if (brName.equalsIgnoreCase("chrome")) {
