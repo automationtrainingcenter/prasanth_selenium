@@ -11,5 +11,12 @@
 	<classpathentry kind="lib" path="D:/selenium/softwares/selenium-java-3.141.59/client-combined-3.141.59-sources.jar"/>
 	<classpathentry kind="lib" path="D:/selenium/softwares/commons-io-2.6.jar"/>
 	<classpathentry kind="lib" path="D:/selenium/softwares/sikuli/sikulixapi.jar"/>
+	<classpathentry kind="lib" path="D:/selenium/softwares/extente reports/bson-3.0.4.jar"/>
+	<classpathentry kind="lib" path="D:/selenium/softwares/extente reports/extentreports-2.41.2.jar"/>
+	<classpathentry kind="lib" path="D:/selenium/softwares/extente reports/freemarker-2.3.23.jar"/>
+	<classpathentry kind="lib" path="D:/selenium/softwares/extente reports/jsoup-1.8.3.jar"/>
+	<classpathentry kind="lib" path="D:/selenium/softwares/extente reports/mongodb-driver-3.0.4.jar"/>
+	<classpathentry kind="lib" path="D:/selenium/softwares/extente reports/mongodb-driver-core-3.0.4.jar"/>
+	<classpathentry kind="lib" path="D:/selenium/softwares/extente reports/sqlite-jdbc-3.8.11.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
